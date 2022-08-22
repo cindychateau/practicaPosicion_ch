@@ -1,0 +1,33 @@
+* { /*CSS Reset*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    width: 150px;
+}
+
+.container {
+    border: 1px dotted black; /*solid, dotted, dashed*/
+    height: 1450px;
+    position: relative;
+}
+
+.element {
+    background-color: gray;
+    padding: 10px;
+}
+
+.main-element {
+    background-color: yellow;
+    padding: 10px;
+    /*position: static; /*Mi elemento NO se mueve para nada*/
+    /*position: relative; /*Me permite usar top, bottom, right y left y se va a estar moviendo en base a la posición original de mi elemento*/
+    /*position: absolute; /*Se va a mover BASADA en el elemento padre y va a ignorar los elementos alrededor*/
+    /*position: fixed; /*No se ve afectada por el scroll*/
+    position: sticky; /*Va a tener la posición original del elemento y al hacer scroll no va a verse afectada*/
+    top: 10px; /*TOP, BOTTOM, LEFT, RIGHT*/
+    left: 20px;
+    z-index: 2; /*Entre más alto sea el número será la prioridad en la "capa"*/
+}
